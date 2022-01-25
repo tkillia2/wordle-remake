@@ -10,7 +10,7 @@ says double letters automatically
 no checking for legit word input
 output spells word in order for correct and in word output lines
 
-JAMES, run these 3 to add something:
+JAMES, run these 3 to add something: 
 TO ADD --> git add --all (will add all files) otherwise git add [file]
 TO COMMIt --> git commit -m "[what it is/does]"
 TO PUSH --> git push 
