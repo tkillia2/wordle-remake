@@ -11,21 +11,26 @@ with open("fives.txt", "r") as file:
     wordleList = list(wordle)
     #print(wordleList)
 
-    letterList = []
+    letterList = [' ',' ',' ',' ',' ']
 
     tries = 1
     correct = False
     while tries < 7 and correct is False:
-        attempt = input("Enter your attempt: ")
+        attempt = input(f"{tries}. Enter your attempt: ")
+        while len(attempt) != 5:
+            print("attempt needs to be a five letter word")
+            attempt = input(f"{tries}. Enter yout attempt: ")
         attemptList = list(attempt)
         tries += 1
         for index in range(len(wordleList)):
             if wordleList[index] == attemptList[index]:
-                print(f"{attemptList[index]} is in the correct position")
+                print(f"\t{attemptList[index]} is in the correct position")
+                #letterList.insert(index, wordleList[index])
             elif wordleList[index] in attemptList:
-                print(f"{wordleList[index]} is in the word but not in the correct position")
+                print(f"\t{wordleList[index]} is in the word but not in the correct position")
             else:
                 None
+        #print(f"Current progress: {letterList}")
 
         if attemptList == wordleList:
             correct = True
