@@ -10,3 +10,12 @@ says double letters automatically
 no checking for legit word input
 output spells word in order for correct and in word output lines
 
+JAMES, run these 3 to add something:
+TO ADD --> git add --all (will add all files) otherwise git add [file]
+TO COMMIt --> git commit -m "[what it is/does]"
+TO PUSH --> git push 
+
+to "rebase" get any updates from me run:
+git pull --rebase
+
+* I am not going to make branches cause I find them annoying for this
