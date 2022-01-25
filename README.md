@@ -7,7 +7,7 @@ Coud=ld potentially add colorama library for words to output for similar to true
 
 ISSUES:
 says double letters automatically
-no checking for legit word input
+no checking for legit word input 
 output spells word in order for correct and in word output lines
 
 JAMES, run these 3 to add something: 
