@@ -1,5 +1,5 @@
 import random
-with open("fives.txt", "r") as file:
+with open("valids.txt", "r") as file:
     allText = file.read()
     words = list(map(str, allText.split()))
   
@@ -17,8 +17,8 @@ with open("fives.txt", "r") as file:
     correct = False
     while tries < 7 and correct is False:
         attempt = input(f"{tries}. Enter your attempt: ")
-        while len(attempt) != 5:
-            print("attempt needs to be a five letter word")
+        while len(attempt) != 5 or attempt not in words:
+            print("attempt needs to be a five letter word or a valid word")
             attempt = input(f"{tries}. Enter yout attempt: ")
         attemptList = list(attempt)
         tries += 1
